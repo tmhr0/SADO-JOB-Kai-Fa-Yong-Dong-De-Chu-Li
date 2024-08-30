@@ -48,6 +48,8 @@ body {
 
 .candidate-info p {
   margin: 20px 0;
+  font-size: 22px;
+  color: #9CABBA;
 }
 
 .candidate-info h3 {

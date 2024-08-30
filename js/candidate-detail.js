@@ -37,9 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p>${candidate.career}</p>
             </div>
             <h3>Policies</h3>
-            <p>${candidate.policies}</p>
+            <p>${candidate}</p>
             <h3>Vision</h3>
-            <p>${candidate.vision}</p>
 　　 　　         <h3>Video</h3>
  　　　　         <div class="video-container"></div>
         </div>
