@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (selectedCandidateId) {
             window.location.href = `/vote/confirm.html?candidate=${selectedCandidateId.value}`;
         } else {
-            alert('候補者を選択してください。');
+
         }
     });
 });
