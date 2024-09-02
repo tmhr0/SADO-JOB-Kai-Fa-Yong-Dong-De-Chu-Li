@@ -1,4 +1,3 @@
-// cardsGeneratedイベントが発生した時に処理を実行
 document.addEventListener('cardsGenerated', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const candidateId = urlParams.get('candidate');
@@ -18,6 +17,7 @@ document.addEventListener('cardsGenerated', () => {
         console.error("Candidate ID not found in URL");
     }
 
+    // カードクリック時に選択状態を切り替える
     const candidateCards = document.querySelectorAll('.candidate-card');
     candidateCards.forEach(card => {
         card.addEventListener('click', function() {

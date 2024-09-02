@@ -36,4 +36,8 @@ export async function generateCandidateCards(candidateListElementId) {
         `;
         candidateListElement.appendChild(candidateCard);
     });
+
+    // カードが生成されたことを通知するイベントを発行
+    const event = new Event('cardsGenerated');
+    document.dispatchEvent(event);
 }
