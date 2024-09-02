@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
+
     // 投票が完了している場合、ボタンを無効化
     if (voteData.length > 0) {
         confirmVoteBtn.disabled = true;

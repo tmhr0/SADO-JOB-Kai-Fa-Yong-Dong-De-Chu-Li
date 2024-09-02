@@ -2,7 +2,6 @@
 document.addEventListener('cardsGenerated', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const candidateId = urlParams.get('candidate');
-    console.log("Candidate ID from URL:", candidateId); // デバッグメッセージ
 
     if (candidateId) {
         const radioButton = document.getElementById(`candidate-${candidateId}`);
@@ -11,7 +10,6 @@ document.addEventListener('cardsGenerated', () => {
             const candidateCard = radioButton.closest('.candidate-card');
             if (candidateCard) {
                 candidateCard.classList.add('selected');
-                console.log("Candidate card selected:", candidateCard); // デバッグメッセージ
             }
         } else {
             console.error("Radio button for candidate not found");

@@ -19,7 +19,7 @@ export async function generateCandidateCards(candidateListElementId) {
         return;
     }
 
-    // 候補者リストを動的に生成
+    // 候補者リストを生成
     candidates.forEach(candidate => {
         const candidateCard = document.createElement('label');
         candidateCard.classList.add('candidate-card');

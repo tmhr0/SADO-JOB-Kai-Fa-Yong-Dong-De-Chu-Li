@@ -6,11 +6,14 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
+    // Supabaseを使ってメールアドレスとパスワードでログインを試みる
     const { error } = await supabase.auth.signInWithPassword({
         email: email,
         password: password,
     });
 
+    // ログインに成功した場合、指定のURLへリダイレクト
+    // URLパラメータにリダイレクト先が指定されていればそこに、なければデフォルトで /vote にリダイレクト
     if (error) {
         alert('正しいメールアドレスとパスワードを入力してください: ' + error.message);
     } else {

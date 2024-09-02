@@ -1,6 +1,7 @@
 import { supabase } from './supabase.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // URLパラメータから候補者IDを取得
     const urlParams = new URLSearchParams(window.location.search);
     const candidateId = urlParams.get('id');
 
@@ -23,8 +24,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
+    // 性別の表示を設定
     const genderDisplay = candidate.gender == 0 ? '男性' : '女性';
-    
+
+    // ページに候補者情報を挿入
     const detailContainer = document.getElementById('candidate-detail');
     detailContainer.innerHTML = `
         <div class="candidate-photo-container">
@@ -44,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
     `;
 
-    // 動画を正しく設定するコード例
+    // 候補者のビデオ情報を挿入
     const videoContainer = document.querySelector('.video-container');
     if (candidate.video_url) {
         const iframeElement = document.createElement('iframe');

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const { data: candidates, error } = await supabase
         .from('candidate')
         .select('*')
-        .order('id', { ascending: true });  // ID順に並べる
+        .order('id', { ascending: true });
 
     if (error) {
         console.error('候補者情報の取得に失敗しました:', error);
