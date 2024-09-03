@@ -3,7 +3,9 @@
 }
 
 .top-header__title {
-  text-align: start;  
+  text-align: start; 
+  font-size: 18;
+  font-weight: bold;
 }
 
 .top-header {
@@ -51,7 +53,7 @@
 }
 
 .main-info__title {
-  font-size: 18px;
+  font-size: 32px;
   margin: 0;
   font-weight: bold;
 }
