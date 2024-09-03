@@ -53,6 +53,7 @@
 .main-info__title {
   font-size: 18px;
   margin: 0;
+  font-weight: bold;
 }
 
 .main-info__description {
