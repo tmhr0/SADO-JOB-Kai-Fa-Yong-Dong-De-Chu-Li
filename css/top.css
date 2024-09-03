@@ -79,8 +79,9 @@
 }
 
 .main-info__election-day-image {
-  height: 50px;
-  border-radius: 5px;
+  width: 130;
+  height: 64px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
