@@ -4,7 +4,7 @@
 
 .top-header__title {
   text-align: start; 
-  font-size: 18;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -60,6 +60,7 @@
 
 .main-info__description {
   margin: 10px 0;
+  font-size: 16px;
 }
 
 .main-info__election-day {
@@ -71,15 +72,17 @@
 }
 
 .main-info__election-day-title {
+  font-size: 16px;
   color: #fff;
 }
 
 .main-info__election-day-date {
+  font-size: 14px;
   color: #9CABBA;
 }
 
 .main-info__election-day-image {
-  width: 130;
+  width: 130px;
   height: 64px;
   border-radius: 12px;
   object-fit: cover;
