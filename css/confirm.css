@@ -84,6 +84,7 @@ body {
 .blue-btn {
   position: relative;
   bottom: auto;
+  justify-content: center;
 }
 
 .gray-btn {
