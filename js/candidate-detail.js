@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="candidate-attribute__title">
                 <h2>${candidate.name}</h2>
                 <p class="candidate-attribute__subtitle">${candidate.age}歳(${genderDisplay})</p>
-                <p>${candidate.career}</p>
+                <p class="carrer">${candidate.career}</p>
             </div>
             <h3>Policies</h3>
             <p>${candidate.policies}</p>
