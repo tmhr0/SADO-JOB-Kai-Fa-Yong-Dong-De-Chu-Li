@@ -43,8 +43,24 @@ document.addEventListener('DOMContentLoaded', async () => {
             <p>${candidate.policies}</p>
             <h3>Vision</h3>
              <p>${candidate.vision}</p>
+            <h3>Get in Touch</h3>
+             <div class="social-links">
+                 <div class="social-link">
+                     <a href="#"><img src="/image/candidate-detail/twitter-icon.svg" alt="Twitter"></a>
+                     <p>Twitter</p>
+                 </div>
+                 <div class="social-link">
+                      <a href="#"><img src="/image/candidate-detail/facebook-icon.svg" alt="Facebook"></a>
+                      <p>Facebook</p>
+                  </div>
+                  <div class="social-link">
+                       <a href="#"><img src="/image/candidate-detail/instagram-icon.svg" alt="Instagram"></a>
+                       <p>Instagram</p>
+                   </div>
+             </div>
 　　 　　         <h3>Video</h3>
  　　　　         <div class="video-container"></div>
+              
         </div>
     `;
 
