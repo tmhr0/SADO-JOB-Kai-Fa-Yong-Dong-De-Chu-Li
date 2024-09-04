@@ -21,3 +21,13 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
         window.location.href = redirectUrl;
     }
 });
+
+// パスワード表示・非表示
+const passwordToggle = document.querySelector('.password__toggle');
+const passwordInput = document.getElementById('password');
+
+passwordToggle.addEventListener('click', () => {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    passwordToggle.classList.toggle('is-visible');
+});
