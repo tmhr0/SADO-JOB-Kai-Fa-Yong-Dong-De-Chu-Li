@@ -9,6 +9,7 @@
 .header__title {
   flex-grow: 0.55;
   text-align: start;
+  font-size: 18px;
 }
 
 .vote-info {
@@ -123,4 +124,30 @@ input[type="radio"]:not(:checked) + .candidate-content .radio-custom::after {
 
 input[type="radio"]:checked + .candidate-content .radio-custom {
   border-color: #0A61C2;
+}
+
+.btn-screen{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.blue-btn{
+  background-color: #0A61C2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 80%;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 5%;
 }
