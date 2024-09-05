@@ -165,3 +165,7 @@
   position: fixed;
   bottom: 5%;
 }
+
+.btn-hidden {
+  display: none;
+}
