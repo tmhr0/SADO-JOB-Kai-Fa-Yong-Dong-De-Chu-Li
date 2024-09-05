@@ -18,6 +18,7 @@
 
 .complete-info {
   text-align: center;
+  margin-top: 45px;
 }
 
 .complete-info h2 {
@@ -29,7 +30,7 @@ margin-bottom: 12px;
 
 .complete-info p {
 font-size:  16px;
-margin-bottom: 12px;
+margin-bottom: 24px;
 }
 
 .btn-section {
@@ -45,7 +46,7 @@ margin-bottom: 12px;
   font-weight: bold;
   border: none;
   padding: 12px;
-  width: 40%;
+  width: 163px;
   border-radius: 12px;
   cursor: pointer;
   display: flex;
