@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         candidateCard.href = `/candidate/detail.html?id=${candidate.id}`;
         candidateCard.classList.add('candidate-card');
         candidateCard.innerHTML = `
-            <img src="/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}">
+            <img src href="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}">
             <div class="candidate-info">
                 <h2>${candidate.name}</h2>
                 <p>${candidate.age}歳</p>

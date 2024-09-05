@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップページ</title>
-    <base href="/vote-system/">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/top.css">
+    <base href="/vote-system/vote-system/">
+    <link rel="stylesheet" href="/vote-system/css/style.css">
+    <link rel="stylesheet" href="/vote-system/css/top.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="page">
@@ -22,7 +22,7 @@
                 </a>
                 <div class="header__settings-content">
                   <a href="#" id="logout-btn">ログアウト</a>
-                  <a href="/" id="vote-reset-btn">投票リセット</a>
+                  <a href="/vote-system/" id="vote-reset-btn">投票リセット</a>
                 </div>
               </div>
         </header>
@@ -35,13 +35,13 @@
                         <h3 class="main-info__election-day-title">選挙投票日</h3>
                         <span class="main-info__election-day-date">2024年11月20日</span>
                     </div>
-                    <img src="/image/top/top_03.jpg" alt="Election Image" class="main-info__election-day-image">
+                    <img src href="/vote-system/image/top/top_03.jpg" alt="Election Image" class="main-info__election-day-image">
                 </div>
             </section>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="/candidate/index.html" class="nav__link" id="candidate-link">
+                        <a href="/vote-system/candidate/index.html" class="nav__link" id="candidate-link">
                             <div class="nav__link-text">
                                 <h2 class="nav__link-title">候補者一覧</h2>
                                 <span class="nav__link-description">立候補者を見る</span>
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="/vote/index.html" class="nav__link" id="vote-link">
+                        <a href="/vote-system/vote/index.html" class="nav__link" id="vote-link">
                             <div class="nav__link-text">
                                 <h2 class="nav__link-title">投票する</h2>
                                 <span class="nav__link-description">あなたの支持を届けよう</span>
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="/vote/result.html" class="nav__link disabled" id="result-link">
+                        <a href="/vote-system/vote/result.html" class="nav__link disabled" id="result-link">
                             <div class="nav__link-text">
                                 <h2 class="nav__link-title">投票結果</h2>
                                 <span class="nav__link-description">すべての投票が完了すると確認できます</span>
@@ -74,9 +74,9 @@
     <div class="btn-screen">
         <a href="login" class="blue-btn btn-hidden">ログイン</a>
     </div>
-    <script type="module" src="/js/dropdown.js"></script>
-    <script type="module" src="/js/logout.js" defer></script>
-    <script type="module" src="/js/check-login.js"></script>
-    <script type="module" src="/js/ballot_counting.js"></script>
+    <script type="module" src="/vote-system/js/dropdown.js"></script>
+    <script type="module" src="/vote-system/js/logout.js" defer></script>
+    <script type="module" src="/vote-system/js/check-login.js"></script>
+    <script type="module" src="/vote-system/js/ballot_counting.js"></script>
 </body>
 </html>
