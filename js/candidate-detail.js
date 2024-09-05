@@ -82,14 +82,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
         videoContainer.textContent = 'ビデオがありません';
     }
-
-    // 投票ボタンのリンクに候補者IDを付与
-    const confirmVoteBtn = document.getElementById('confirm-vote-btn');
-    const candidateUrl = `/vote/index.html?candidate=${candidate.id}`;
-    confirmVoteBtn.href = candidateUrl;
-
-    // confirmVoteBtnがnullでないことを確認
-    if (!confirmVoteBtn) {
-        console.error('confirm-vote-btnが見つかりません');
-    }
 });

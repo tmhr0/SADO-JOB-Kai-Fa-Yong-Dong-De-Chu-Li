@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (error || !session) {
      // 非ログイン状態なら、ログインページへリダイレクト
       window.location.href = '/login/index.html';
-
     } else {
      // ログイン済みなら指定のページへ遷移
      window.location.href = linkData.href;
