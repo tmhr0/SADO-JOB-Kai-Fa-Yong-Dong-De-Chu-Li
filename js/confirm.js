@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 候補者情報をページに挿入
     const selectedCandidateContainer = document.getElementById('selected-candidate');
     selectedCandidateContainer.innerHTML = `
-        <img src="/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
+        <img src href="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
         <div class="candidate-details">
             <h3>${candidate.name}</h3>
             <p>${candidate.career}</p>
