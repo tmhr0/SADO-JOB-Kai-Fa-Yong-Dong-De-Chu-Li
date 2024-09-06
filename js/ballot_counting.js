@@ -1,7 +1,7 @@
 import { supabase } from './supabase.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const voteResultLink = document.querySelector('a[href="/vote/result.html"]');
+  const voteResultLink = document.querySelector('a[href="/vote-system/vote/result.html"]');
 
   const { data: users, error: usersError } = await supabase
       .from('user')
