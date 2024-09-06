@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   const linksToCheck = [
-  { id: 'vote-link', href: '/vote' },
-  { id: 'confirm-vote-btn', href: '/vote' },
+  { id: 'vote-link', href: '/vote-system/vote' },
+  { id: 'confirm-vote-btn', href: '/vote-system/vote' },
  ];
 
  linksToCheck.forEach(linkData => {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (error || !session) {
      // 非ログイン状態なら、ログインページへリダイレクト
-      window.location.href = '/login/index.html';
+      window.location.href = '/vote-system/login/index.html';
     } else {
      // ログイン済みなら指定のページへ遷移
      window.location.href = linkData.href;
