@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const detailContainer = document.getElementById('candidate-detail');
     detailContainer.innerHTML = `
         <div class="candidate-photo-container">
-            <img src href="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
+            <img src="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
         </div>
         <div class="candidate-info">
             <div class="candidate-attribute__title">
@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             <h3>Get in Touch</h3>
              <div class="social-links">
                  <div class="social-link">
-                     <a href="#"><img src href="/vote-system/image/candidate-detail/twitter-icon.svg" alt="Twitter"></a>
+                     <a href="#"><img src="/vote-system/image/candidate-detail/twitter-icon.svg" alt="Twitter"></a>
                      <p>Twitter</p>
                  </div>
                  <div class="social-link">
-                      <a href="#"><img src href="/vote-system/image/candidate-detail/facebook-icon.svg" alt="Facebook"></a>
+                      <a href="#"><img src="/vote-system/image/candidate-detail/facebook-icon.svg" alt="Facebook"></a>
                       <p>Facebook</p>
                   </div>
                   <div class="social-link">
-                       <a href="#"><img src href="/vote-system/image/candidate-detail/instagram-icon.svg" alt="Instagram"></a>
+                       <a href="#"><img src="/vote-system/image/candidate-detail/instagram-icon.svg" alt="Instagram"></a>
                        <p>Instagram</p>
                    </div>
              </div>

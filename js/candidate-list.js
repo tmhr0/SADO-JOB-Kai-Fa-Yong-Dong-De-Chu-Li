@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 候補者のカードを生成してページに追加
     candidates.forEach(candidate => {
         const candidateCard = document.createElement('a');
-        candidateCard.href = `/candidate/detail.html?id=${candidate.id}`;
+        candidateCard.href = `/vote-system/candidate/detail.html?id=${candidate.id}`;
         candidateCard.classList.add('candidate-card');
         candidateCard.innerHTML = `
-            <img src href="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}">
+            <img src="/vote-system/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}">
             <div class="candidate-info">
                 <h2>${candidate.name}</h2>
                 <p>${candidate.age}歳</p>

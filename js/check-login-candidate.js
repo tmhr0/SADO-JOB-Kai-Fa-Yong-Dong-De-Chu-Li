@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (error || !session) {
             // 非ログイン状態ならログインページへリダイレクト
-            window.location.href = '/login/index.html';
+            window.location.href = '/vote-system/login/index.html';
         } else {
             // ログイン済みなら候補者IDをURLに追加して投票ページに遷移
             const candidateId = new URLSearchParams(window.location.search).get('id');  // 'id' で取得
 
             // 候補者IDがある場合のみ投票ページに遷移
             if (candidateId) {
-                window.location.href = `/vote/index.html?candidate=${candidateId}`;
+                window.location.href = `/vote-system/vote/index.html?candidate=${candidateId}`;
             }
         }
     });

@@ -8,11 +8,11 @@ document.getElementById('logout-btn').addEventListener('click', async () => {
     if (error) {
         console.error('ログアウトに失敗しました:', error.message);
     } else {
-        window.location.href = '/login';
+        window.location.href = '/vote-system/login';
     }
 });
 
 // 投票リセットボタンのクリックイベントにリスナーを追加
 document.getElementById('vote-reset-btn').addEventListener('click', () => {
-    window.location.href = '/vote-reset';
+    window.location.href = '/vote-system/vote-reset';
 });

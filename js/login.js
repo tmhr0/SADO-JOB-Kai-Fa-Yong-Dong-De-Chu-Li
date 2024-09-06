@@ -17,7 +17,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     if (error) {
         alert('正しいメールアドレスとパスワードを入力してください: ' + error.message);
     } else {
-        const redirectUrl = new URLSearchParams(window.location.search).get('redirect') || '/vote';
+        const redirectUrl = new URLSearchParams(window.location.search).get('redirect') || '/vote-system/vote';
         window.location.href = redirectUrl;
     }
 });
